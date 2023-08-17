@@ -435,7 +435,7 @@ video {
 }
 
 @font-face {
-  src: url("../assets/AvrosTrosMidnight-60Black.woff2") format("woff2");
+  src: url("../assets/AvrosTrosMidnight-60Black.woff2") format("woff2"), local('Avros Tros Midnight'), local("AvrosTrosMidnight");
 
   font-family: "Avros Tros Midnight";
 }
@@ -544,14 +544,21 @@ video {
   display: block;
   max-height: 1em;
   min-height: 1em;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   text-transform: uppercase;
   --tw-text-opacity: 1;
   color: rgb(117 251 225 / var(--tw-text-opacity));
   transition-property: all;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 768px) {
+  .nav-menu-list li {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -592,14 +599,14 @@ video {
   background-color: rgb(2 4 70 / var(--tw-bg-opacity));
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .font-bold {

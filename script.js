@@ -28,18 +28,13 @@ function onItemHover(activeItem, activeIndex) {
             scaleFactor = SIBILINGS_MULTIPLIER
         }
 
-
         item.firstChild.style.transform = 'scale3d(' + scaleFactor + ', ' + scaleFactor + ', 1)'
-
         item.style.maxHeight = scaleFactor + "em"
         item.style.minHeight = scaleFactor + "em"
-
-
     })
 }
 
 items.forEach((item, i) => {
-
     item.addEventListener('mouseover', () => onItemHover(item, i))
 })
 
