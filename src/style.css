@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        src: url("../assets/AvrosTrosMidnight-60Black.woff2") format("woff2");
+        font-family: "Avros Tros Midnight";
+    }
+}
+
+@layer components {
+
+    .nav-menu-list li {
+        @apply block text-green uppercase max-h-[1em] min-h-[1em] transition-all ease-in-out text-4xl lg:text-7xl;
+        will-change: font-size, min-height, max-height;
+    }
+
+    .nav-menu-list li a {
+        @apply inline-block transition ease-in-out origin-top-left ;
+    }
+}

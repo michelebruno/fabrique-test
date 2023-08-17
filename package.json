@@ -1,0 +1,15 @@
+{
+  "name": "fabrique",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "npx tailwindcss -i ./src/style.css -o ./dist/output.css --watch",
+    "serve": "npx http-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
